@@ -1,0 +1,246 @@
+/* second way to adding fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+*/
+
+/* third  way using download fonts which is better of offline  */
+/* after download an dput in root file */
+/* @font-face {
+    font-family : Robotto;
+    src: url(path of your font address relative)
+    */
+
+/* adding style to whole your page (general) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Poppins", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(11, 168, 194, 1) 28%,
+      rgba(37, 255, 210, 1) 70%,
+      rgba(146, 255, 221, 1) 100%
+    );
+  }
+  
+  header {
+    background-color: #fff;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+  header nav a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  header nav a:hover {
+    background-color: rgb(175, 175, 175);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  #home h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  #home h1:hover {
+    padding: 10px;
+    font-size: 45px;
+    background-color: rgba(6, 106, 106, 0.5);
+  }
+  
+  #home img {
+    display: block;
+    border: 1px solid #989696;
+    border-radius: 50%;
+    padding: 10px;
+    width: 200px;
+    margin: 50px auto;
+  }
+  
+  #home img:hover {
+    box-shadow: 0 0 25px 10px rgba(2, 61, 81, 0.5);
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #27386e;
+    padding: 10px;
+  }
+  
+  /* #education {
+      margin: 20px;
+      padding: 10px;
+    } */
+  
+  #education {
+    background: #e1e3ec;
+  }
+  #education > h2 {
+    text-align: center;
+    text-shadow: 0 0 3px #5a668e, 0 0 5px #6070a3;
+    text-transform: uppercase;
+  }
+  
+  #education ul {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #4d4d4e;
+  }
+  #education ul li {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 3px;
+    color: #060e27;
+  }
+  #education ul li ul {
+    list-style-type: none;
+  }
+  
+  #education ul li ul li:nth-of-type(2n + 1) {
+    background-color: #5a668e;
+    color: #ebebeb;
+    list-style-type: circle 5px black;
+  }
+  
+  #technical-skill {
+    text-align: center;
+  }
+  #technical-skill table {
+    margin: 20px auto;
+  }
+  
+  #technical-skill table caption {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  #technical-skill table {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  #technical-skill table th,
+  td {
+    padding: 10px;
+  }
+  #technical-skill table tr {
+    background-color: #6d7694;
+  }
+  #technical-skill table thead {
+    background-color: #27386e;
+    color: #eeeaea;
+  }
+  #technical-skill table tbody tr:nth-of-type(2n + 1) {
+    color: #b8b9ba;
+    background-color: #27386e;
+  }
+  
+  #expereince h2 {
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #5a668e, 0 0 5px #6070a3;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  #expereince li h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #060e27;
+  }
+  #expereince li {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  #expereince ul {
+    margin-left: 20px;
+    color: #4d4d4e;
+    font-weight: 400;
+  }
+  #expereince ul li ul {
+    list-style-type: none;
+  }
+  
+  #expereince ul li ul li:nth-of-type(2n) {
+    background-color: #5f6d9b;
+    color: #ebedee;
+    list-style-type: none;
+  }
+  
+  footer {
+    margin: 20px 0;
+  }
+  
+  footer h2 {
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #5a668e, 0 0 5px #6070a3;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  
+  #contact {
+    background: #05677b;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  #contact p {
+    font-size: 1rem;
+    color: white;
+  }
+  #contact form {
+    margin-top: 30px;
+    font-size: 0.85em;
+    font-weight: 450;
+    color: #f5f6f6;
+  }
+  #contact form div {
+    padding: 5px;
+    width: 200px;
+    height: auto;
+  }
+  .gender {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  .interest {
+    display: flex;
+    gap: 5px;
+  }
+  #contact form div input {
+    width: 100%;
+    height: 25px;
+  }
+  form button {
+    background-color: #c3c6d0;
+    color: #1e1f1f;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  form button:hover {
+    background-color: #1364ef;
+    color: #fff;
+  }
+  
+  form + p {
+    text-align: center;
+    color: #fff;
+  }
+  
