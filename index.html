@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital CV with BoxModel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="hero" id="hero">
+          <div class="hero-content">
+            <h3>Hi</h3>
+            <h1>
+              Iam <span>Ali<br /></span>a frontend Developer
+            </h1>
+            <p>
+              a passionate Frontend Developer dedicated to creating visually
+              stunning and user-friendly web experiences. With a keen eye for
+              design and a strong foundation in HTML, CSS, and JavaScript, I
+              transform complex ideas into seamless and interactive websites.
+              Whether you're looking for a modern, responsive design or need to
+              optimize an existing site, I'm here to bring your vision to life.
+              Let's build something amazing together!
+            </p>
 
-    <header>
+            <div class="btn-box">
+              <button class="btn-1">Hire me</button>
+              <button class="btn-2">Experience</button>
+            </div>
+          </div>
+
+          <div class="img-box">
+            <img src="./assets/img/Ali.jpg" alt="mypic" />
+          </div>
+        </div>
+      </header>
+
+      <div class="header-nav">
+        <a href="#" class="logo"><span>Ali</span>Dev</a>
         <!-- navbar -->
-  
-        <nav>
+        <nav class="navbar">
           <a href="#home">Home</a>
           <a href="#education">Education</a>
           <a href="#technical-skill">Technical Skill</a>
           <a href="#expereince">Experiences</a>
           <a href="#contact">Contact</a>
         </nav>
-      </header>
-      <br />
+        <a href="#" class="contact-header">Contact me</a>
+      </div>
+
       <main>
-        <section id="home">
-          <div>
-            <h1>Digital CV &clubs;</h1>
-            <img src="./assets/img/Ali.jpg" alt="my picture" width="200px" />
-          </div>
-  
-          <br />
-          <br />
-          <div>
+        <section id="contact-info">
+          <div class="contact-info">
             <h2><em>Contact Information</em></h2>
             <table class="contact">
               <caption>
@@ -51,7 +78,7 @@
                   <th>GitHub</th>
                 </tr>
               </thead>
-  
+
               <!-- Table Body: Contains details about each tool. -->
               <tbody>
                 <tr>
@@ -76,7 +103,36 @@
           </div>
         </section>
         <br />
-  
+        <div class="parallax-2"></div>
+
+        <section class="about-me">
+          <div class="about-img">
+            <img src="./assets/img/02.jpg" alt="" />
+          </div>
+
+          <div class="about-content">
+            <h2 class="heading">
+              <em>About <span>Me</span></em>
+            </h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>
+              Hello! I'm Ali, a Frontend Developer with a passion for crafting
+              elegant and efficient web applications. With years of experience
+              in the industry, I've honed my skills in HTML, CSS, and
+              JavaScript, along with modern frameworks like React and Vue.js. I
+              thrive on solving complex problems and bringing creative solutions
+              to life. When I'm not coding, you can find me exploring new
+              technologies, contributing to open-source projects, or enjoying a
+              good book. My goal is to continuously grow as a developer and
+              create impactful digital experiences that make a difference. Let's
+              connect and make the web a better place, one project at a time.
+            </p>
+            <!-- <a href="#" class="btn-2">Experience</a> -->
+          </div>
+        </section>
+
+        <div class="parallax"></div>
+
         <!-- Education -->
         <section id="education">
           <h2><em>Education</em></h2>
@@ -119,13 +175,13 @@
           </ul>
         </section>
         <br />
-  
+
         <section id="technical-skill">
           <!-- technical skill -->
-  
+
           <h2><em>Technical Skills</em></h2>
           <br />
-  
+
           <table>
             <caption>
               software tools
@@ -183,9 +239,19 @@
             </tbody>
           </table>
         </section>
-  
-        <br />
-  
+
+        <div class="img-container">
+          <img src="./assets/img/img-2.png" alt="" />
+
+          <img src="./assets/img/img-4.png" alt="" />
+
+          <img src="./assets/img/img-3.png" alt="" />
+
+          <img src="./assets/img/img-5.png" alt="" />
+
+          <img src="./assets/img/img-1.png" alt="" />
+        </div>
+
         <section id="expereince">
           <h2><em>Experience</em></h2>
           <!-- experience -->
@@ -194,9 +260,9 @@
               <h4>Flow Sort Associate - Amazon (2020-2024)</h4>
               <ul>
                 <li>
-                  Collaborated with team members accurately and efficiently based
-                  on assigned criteria to meet productivity targets which is 1200
-                  items per hour and maintain a smooth workflow
+                  Collaborated with team members accurately and efficiently
+                  based on assigned criteria to meet productivity targets which
+                  is 1200 items per hour and maintain a smooth workflow
                 </li>
                 <li>
                   Contributed to the expedited order fulfillment process by
@@ -209,12 +275,12 @@
                   accommodate shifting business needs
                 </li>
                 <li>
-                  Efficiently packed customer orders with attention to detail and
-                  accuracy
+                  Efficiently packed customer orders with attention to detail
+                  and accuracy
                 </li>
               </ul>
             </li>
-  
+
             <li>
               <h4>Head of Design Department - foreign (2014-2019)</h4>
               <ul>
@@ -233,10 +299,10 @@
                   timely completion and adherence to project schedules
                 </li>
                 <li>
-                  Directed and executed the design and development of more than 50
-                  interior spaces across a range of diverse projects, meticulously
-                  aligning each design with clients' individual visions and
-                  specific requirements
+                  Directed and executed the design and development of more than
+                  50 interior spaces across a range of diverse projects,
+                  meticulously aligning each design with clients' individual
+                  visions and specific requirements
                 </li>
               </ul>
             </li>
@@ -244,13 +310,13 @@
         </section>
       </main>
       <br />
-  <!-- footer -->
-      <footer>
+
+      <section class="contact-me">
         <h2><em>Contact</em></h2>
-        
+
         <section id="contact">
           <p>Let's connect and discuss more about software engineering!</p>
-  
+
           <!-- Contact Form -->
           <form action="#" target="_blank" method="post">
             <!-- first name Input -->
@@ -285,7 +351,7 @@
                 placeholder=" Enter Your Company Name"
               />
             </div>
-  
+
             <!-- Email Input -->
             <div>
               <label for="email">Email:</label>
@@ -307,13 +373,13 @@
               <label for="phone">Enter your phone number:</label>
               <input type="tel" id="phone" name="phone" />
             </div>
-  
+
             <!-- Date Input -->
             <div>
               <label for="date">Date:</label>
               <input type="date" id="date" name="date" />
             </div>
-  
+
             <!-- Radio Buttons -->
             <div class="gender">
               <label>Gender:</label>
@@ -322,19 +388,29 @@
               <input type="radio" id="female" name="gender" value="female" />
               <label for="female">Female</label>
             </div>
-  
+
             <div class="interest">
               <label>Interests:</label>
-              <input type="checkbox" id="coding" name="interest" value="coding" />
+              <input
+                type="checkbox"
+                id="coding"
+                name="interest"
+                value="coding"
+              />
               <label for="coding">Coding</label>
               <input type="checkbox" id="music" name="interest" value="music" />
               <label for="music">Music</label>
               <input type="checkbox" id="food" name="interest" value="food" />
               <label for="food">Food</label>
-              <input type="checkbox" id="travel" name="interest" value="travel" />
+              <input
+                type="checkbox"
+                id="travel"
+                name="interest"
+                value="travel"
+              />
               <label for="travel">Travel</label>
             </div>
-  
+
             <div>
               <!-- Reason for Contact Dropdown -->
               <div>
@@ -349,7 +425,7 @@
                 </select>
               </div>
             </div>
-  
+
             <div>
               <label for="message">Message:</label>
               <textarea
@@ -361,19 +437,48 @@
                 placeholder="Write some description here..."
               ></textarea>
             </div>
-  
+
             <!-- Buttons -->
             <button type="reset">Clear</button>
             <button type="submit">Submit</button>
           </form>
-  
-          <p><small>&copy; Ali Mousazada | All Rights Reserved</small></p>
         </section>
+      </section>
+
+      <footer class="footer">
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+        <ul class="list">
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <a href="#hero" class="backToTop">Back to Top</a>
+
+        <p class="copyright">
+          <small>&copy; Ali Mousazada 2024 | All Rights Reserved</small>
+        </p>
       </footer>
-    
-
-
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
